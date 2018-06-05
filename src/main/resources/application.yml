@@ -1,0 +1,10 @@
+spring:
+  jackson:
+    time-zone: GMT+8
+#logging:
+#  pattern:
+##      console: "%d%n"
+##  path: /home/liankun/log/
+#  file: /home/liankun/log/sell.log
+
+
