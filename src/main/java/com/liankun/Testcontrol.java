@@ -1,4 +1,4 @@
-package com.liankun.sell;
+package com.liankun;
 
 public class Testcontrol {
 

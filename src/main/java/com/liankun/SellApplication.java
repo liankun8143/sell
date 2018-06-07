@@ -1,4 +1,4 @@
-package com.liankun.sell;
+package com.liankun;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
