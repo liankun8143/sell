@@ -1,6 +1,5 @@
 package com.liankun.repository;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.liankun.dataobject.OrderMaster;
 import org.junit.Assert;
 import org.junit.Test;

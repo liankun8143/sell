@@ -1,23 +1,16 @@
-package com.liankun.dataobject;
+package com.liankun.dto;
 
+import com.liankun.dataobject.OrderDetail;
 import com.liankun.enums.OrderStatusEnum;
 import com.liankun.enums.PayStatusEnum;
 import lombok.Data;
-import org.hibernate.annotations.DynamicUpdate;
-import org.springframework.data.annotation.Transient;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
 @Data
-@DynamicUpdate
-@Entity
-public class OrderMaster {
-
-    @Id
+public class OrderDTO {
     private String orderId;
 
     private String buyerName;
@@ -31,13 +24,13 @@ public class OrderMaster {
     private BigDecimal orderAmount;
 
     /***  订单状态 ***/
-    private Integer orderStatus=OrderStatusEnum.NEW.getCode();
+    private Integer orderStatus;
 
-    private Integer payStatus=PayStatusEnum.WAIT.getCode();
+    private Integer payStatus;
 
     private Date createTime;
 
     private Date updateTime;
 
-
+    private List<OrderDetail> orderDetailList;
 }
