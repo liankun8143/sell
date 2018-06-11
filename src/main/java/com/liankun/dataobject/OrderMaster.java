@@ -4,8 +4,6 @@ import com.liankun.enums.OrderStatusEnum;
 import com.liankun.enums.PayStatusEnum;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
-import org.springframework.data.annotation.Transient;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;

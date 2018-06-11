@@ -1,6 +1,7 @@
 spring:
   jackson:
     time-zone: GMT+8
+    default-property-inclusion: non_null    #json返回不能为null
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
